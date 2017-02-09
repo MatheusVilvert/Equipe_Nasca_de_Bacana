@@ -8,28 +8,46 @@ width:100%;
 display:block;
 			}
 			div img{
-				position:Absolute;
+				position:relative;
 top:0;
 left:0;
 right:0;
 bottom:0;
-display:block;
+
 margin:auto;
 height:64px;
 width:64px;
 }
+	h1{
+		text-align: center;
+	}
+
 </style>
+		<script language="JavaScript">
+			function piscar(){
+				intrvl=0;
+				for(nTimes=0;nTimes<50;nTimes++){
+					intrvl += 200;
+					setTimeout("document.bgColor='#0000FF';",intrvl);
+					intrvl += 200;
+					setTimeout("document.bgColor='#FF0000';",intrvl);
+				}
+			}
+		</script>
+		<form>
+			<input type="button" value="piscar" onClick="piscar()">
+		</form>
 	</head>
 	
 	<body>
 
-		<h1>LUL</h1>
+		<h1><marquee behavior = scroll>LUL</marquee> </h1>
 
 	
 		<div>
-		<img src="http://i.imgur.com/0r9DMgK.png">
+		<marquee direction="up"><img src="http://i.imgur.com/0r9DMgK.png"></marquee>
 
-		<h1> Nasca de Bacana</h1>
+		<h1><marquee direction="right">Nasca de Bacana</marquee>  </h1>
 		</div>
 
 	</body>
